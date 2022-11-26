@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/bootstrap-5.2.1-dist/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./dist/bootstrap-5.2.1-dist/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./dist/icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./dist/myStyle.css" />
+    <title>وبلاگ شخصی</title>
+</head>
+
+<body>
+    <!-- Start header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary px-2">
+            <a href="https://github.com/EhsanAryan" title="Github Account" target="_blank" class="navbar-brand pt-2">
+                <i class="bi bi-person fs-1"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start bg-secondary w-50" id="myNavbar">
+                <a class="btn btn-close d-md-none ms-auto me-2 mt-2" href="#" data-bs-dismiss="offcanvas"></a>
+                <div class="offcanvas-body flex-md-row text-center align-items-center">
+                    <ul class="navbar-nav fs-5 mx-auto">
+                        <li class="nav-item mx-1">
+                            <a href="#home" class="nav-link my-link-style">خانه</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="#info" class="nav-link my-link-style">درباره من</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="#skills" class="nav-link my-link-style">مهارت ها</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="#articles" class="nav-link my-link-style">مقالات</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-space" id="home"></div>
+    <!-- End header -->
+
+
+    <!-- Start main -->
+    <main>
+        <!-- Start introduce me -->
+        <div class="introduce-me container my-5 fs-2 text-center">
+            <div class="row">
+                <div class="col-12 pb-2">
+                    محمد احسان آریان
+                </div>
+                <div class="col-12 pb-3">
+                    دانشجوی کارشناسی دانشگاه قم
+                </div>
+
+                <div class="divider"></div>
+                <div class="divider"></div>
+
+                <div class="col-12 mt-2 social-media-section">
+                    <h2>میتوانید من را در فضای مجازی نیز دنبال کنید!</h2>
+                    <ul class="list-unstyled d-flex justify-content-center fs-1 mt-3">
+                        <li class="mx-3 social-media-icons">
+                            <a href="#"><i class="bi bi-whatsapp text-success"></i></a>
+                        </li>
+                        <li class="mx-3 social-media-icons">
+                            <a href="#"><i class="bi bi-facebook text-primary"></i></a>
+                        </li>
+                        <li class="mx-3 social-media-icons">
+                            <a href="#"><i class="bi bi-instagram text-warning"></i></a>
+                        </li>
+                        <li class="mx-3 social-media-icons">
+                            <a href="#"><i class="bi bi-youtube text-danger"></i></a>
+                        </li>
+                        <li class="mx-3 social-media-icons">
+                            <a href="#"><i class="bi bi-telegram text-info"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End introduce me -->
+
+
+        <!-- Start slider -->
+        <div class="container px-3 px-md-4 main-slider">
+            <div class="h3 text-center w-25 py-3 border border-3 rounded-5 mx-auto mb-4">عکس ها</div>
+            <div class="carousel slide" id="mySlider" data-bs-ride="carousel" data-bs-interval="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./dist/Pics/slider/1.png" class="slider-img" alt="The first Pic of Slider" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./dist/Pics/slider/2.jpg" class="slider-img" alt="The second Pic of Slider" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./dist/Pics/slider/3.jpg" class="slider-img" alt="The third Pic of Slider" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./dist/Pics/slider/4.jpg" class="slider-img" alt="The forth Pic of Slider" />
+                    </div>
+                </div>
+
+                <div class="carousel-indicators text-center">
+                    <button class="active" data-bs-target="#mySlider" data-bs-slide-to="0"></button>
+                    <button data-bs-target="#mySlider" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#mySlider" data-bs-slide-to="3"></button>
+                </div>
+
+                <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-slide="prev">
+                    <span class="btn btn-danger rounded-circle p-1 p-sm-2 p-md-3 d-flex">
+                        <i class="carousel-control-prev-icon"></i>
+                    </span>
+                </button>
+
+                <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next">
+                    <span class="btn btn-danger rounded-circle p-1 p-sm-2 p-md-3 d-flex">
+                        <i class="carousel-control-next-icon"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <!-- End slider -->
+
+
+        <!-- Start more information -->
+        <div class="container my-5 px-4 px-sm-3" id="info">
+            <div class="row py-3 px-4">
+                <h1 class="text-center">درباره من</h1>
+                <div class="h2 mt-1 mb-3 text-center">بیشتر درباره من بدانید</div>
+
+                <div class="divider"></div>
+
+                <div class="col-12">
+                    <div class="text-center py-2">
+                        <img src="./dist/Pics/avatar-pic.jpg" class="img-fluid rounded-pill w-50" alt="">
+                    </div>
+                    <div class="my-3 fs-4">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                        است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                        تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                        در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                        افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                        فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                        شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                        پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="col-6 col-lg-4 d-flex justify-content-center mt-2 mb-3 fs-3">
+                    <a href="tel:+989199122821" class="no-link">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span title="Phone Number" class="ms-3">09199122821</span>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-4 d-flex justify-content-center mt-2 mb-3 fs-3">
+                    <a href="mailto:alaki@gmail.com" class="no-link">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span title="Email Address" class="ms-3">alaki@gmail.com</span>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center mt-2 mb-3 fs-3">
+                    <i class="bi bi-calendar-date"></i>
+                    <span title="Birth Date" class="ms-3">1378 / 02 / 01</span>
+                </div>
+            </div>
+        </div>
+        <!-- End more information -->
+
+
+        <!-- Start skills -->
+        <div class="container my-5 px-4 px-sm-3" id="skills">
+            <div class="row py-5 px-4">
+                <div class="h2 text-center pb-2 col-12">مهارت ها و زمینه های کاری</div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3">جاوا اسکریپت (JS)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3">تایپ اسکریپت (TS)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3">اچ تی ام ال (HTML)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> سی اس اس (CSS)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> پایتون (Python)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> جی کوئری (JQuery)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> ری اکت (React.JS)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> بوت استرپ (BootStrap)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> متریالایز (Materialize)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> سی پلاس پلاس (C++ / CPP)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 skill-item my-4 px-4">
+                    <div>
+                        <img src="./dist//Pics/skill-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="h3 mt-3"> جاوا (Java)</div>
+                    <p class="mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End skills -->
+
+
+        <!-- Start article -->
+        <div class="container py-5 px-4 px-sm-3" id="articles">
+            <div class="row py-5 px-4">
+                <div class="h2 text-center pb-3"> مقالات </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 my-3 px-2 article-item">
+                    <div>
+                        <img src="./dist/Pics/article-pic.jpg" class="img-thumbnail" alt="" />
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between fs-4">
+                        <span>هوش مصنوعی</span>
+                        <span class="fs-2">
+                            <a href="#" class="no-link">
+                                <i title="Like/Unlike" class="bi bi-heart-fill fs-3 like-icon"></i>
+                            </a>
+                            <a href="#" class="no-link">
+                                <i title="See Article" class="bi bi-eye fs-3 mx-2 visit-icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center align-content-center mt-5">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-success btn-lg text-light pt-3">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-success btn-lg text-light active">1</button>
+                        <button type="button" class="btn btn-outline-success btn-lg text-light">2</button>
+                        <button type="button" class="btn btn-outline-success btn-lg text-light">3</button>
+                        <button type="button" class="btn btn-outline-success btn-lg text-light">4</button>
+                        <button type="button" class="btn btn-outline-success btn-lg text-light pt-3">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End article -->
+
+
+    </main>
+    <!-- End main  -->
+
+    <!-- Start footer  -->
+    <footer class="fixed-bottom page-footer">
+        <div class="my-footer d-flex justify-content-center align-items-center fs-4">
+            طراحی توسط <a href="https://github.com/EhsanAryan" title="Github Account" target="_blank"
+                class="github-link ms-2">احسان</a>
+        </div>
+    </footer>
+
+    <div class="footer-space"></div>
+    <!-- End footer  -->
+
+
+
+    <script src="./dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/jsCodes.js"></script>
+</body>
+
+</html>
